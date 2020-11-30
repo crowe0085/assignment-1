@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matthew Crowe">
+    <meta name="email" content="crow0085@algonquinlive.com">
+
+    <title>Crowe's Pizza</title>
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 0.5fr repeat(4, 1fr) 0.5fr;
+            gap: 0px 0px;
+            grid-template-areas:
+                "Nav Nav Nav Nav Nav"
+                ". Build-Your-Own-Pizza Build-Your-Own-Pizza Build-Your-Own-Pizza ."
+                ". Featured Featured Featured ."
+                ". Featured Featured Featured ."
+                ". Featured Featured Featured ."
+                "Footer Footer Footer Footer Footer";
+        }
+
+        .Build-Your-Own-Pizza {
+            grid-area: Build-Your-Own-Pizza;
+        }
+
+        h3 {
+            background-color: #e12301;
+            color: white;
+            padding-left: 2em;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+        }
+
+        .Build-Your-Own-Pizza img {
+            height: 150px;
+        }
+
+
+
+        .Build-Your-Own-Pizza p {
+            text-align: center;
+
+        }
+
+        .Build-Your-Own-Pizza a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .Build-Your-Own-Pizza td {
+            padding: 0 3em;
+            ;
+        }
+
+        .pFilledIn {
+            background-color: #dba24a;
+            padding-top: 0.25em;
+            padding-bottom: 0.25em;
+        }
+
+        .Featured {
+            grid-area: Featured;
+        }
+
+        table {
+            margin: 0 auto;
+        }
+
+        .Featured img {
+            height: 150px;
+        }
+
+        .Featured p {
+            text-align: center;
+        }
+
+        .Featured a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .Featured td {
+            padding: 0 3em;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <!-- Nav bar / header -->
+        <div class="Nav">
+            <ul>
+                <img src="images/logo.png" alt="crowes pizza logo">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="menu.html">Menu</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="sign-in.html">Sign in</a></li>
+                <li><a href="cart.html"><img src="images/cart.png" alt="cart icon"></a></li>
+            </ul>
+            <h1>
+                Order your pizza below!
+            </h1>
+        </div>
+        <!-- Content -->
+        <div class="Build-Your-Own-Pizza">
+            <h3>Build your own pizza</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="images/pizzas-icon.png" alt="">
+                            <p class="pFilledIn"><a href="#">Order Now</a></p>
+                            <p>Pizza</p>
+                        </td>
+                        <td>
+                            <img src="images/calzone-icon.png" alt="">
+                            <p class="pFilledIn"><a href="#">Order Now</a></p>
+                            <p>Calzone</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="Featured">
+            <h3>Featured Pizzas and Calzones</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="images/pizzas-icon.png" alt="">
+                            <p class="pFilledIn"><a href="#">Order Now</a></p>
+                            <p>hawaiian pizza</p>
+                        </td>
+                        <td>
+                            <img src="images/pizzas-icon.png" alt="">
+                            <p class="pFilledIn"><a href="#">Order Now</a></p>
+                            <p>meat lovers pizza</p>
+                        </td>
+                        <td>
+                            <img src="images/pizzas-icon.png" alt="">
+                            <p class="pFilledIn"><a href="#">Order Now</a></p>
+                            <p>peperoni pizza</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/pizzas-icon.png" alt="">
+                            <p class="pFilledIn"><a href="#">Order Now</a></p>
+                            <p>Veggie pizza</p>
+                        </td>
+                        <td>
+                            <img src="images/pizzas-icon.png" alt="">
+                            <p class="pFilledIn"><a href="#">Order Now</a></p>
+                            <p>bacon and saussage pizza</p>
+                        </td>
+                        <td>
+                            <img src="images/pizzas-icon.png" alt="">
+                            <p class="pFilledIn"><a href="#">Order Now</a></p>
+                            <p>Cheese pizza</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/calzone-icon.png" alt="">
+                            <p class="pFilledIn"><a href="#">Order Now</a></p>
+                            <p>cheese calzone</p>
+                        </td>
+                        <td>
+                            <img src="images/calzone-icon.png" alt="">
+                            <p class="pFilledIn"><a href="#">Order Now</a></p>
+                            <p>peperoni calzone</p>
+                        </td>
+                        <td>
+                            <img src="images/calzone-icon.png" alt="">
+                            <p class="pFilledIn"><a href="#">Order Now</a></p>
+                            <p>veggie calzone</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Footer -->
+        <div class="Footer">
+            <p>
+                <img src="images/logo.png" alt="">
+                Store #312 <br>
+                Ottawa, Ontario <br>
+                (613)-225-9568 <br>
+                <a href="mailto:crowespizza@crowespizza.com">crowespizza@crowespizza.com</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

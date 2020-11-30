@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matthew Crowe">
+    <meta name="email" content="crow0085@algonquinlive.com">
+
+    <title>Crowe's Pizza</title>
+
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+        .grid-container {
+            min-height: 100vh;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 0.5fr repeat(3, 1fr) 0.5fr;
+            gap: 0px 0px;
+            grid-template-areas:
+                "Nav Nav Nav"
+                ". Cart ."
+                ". Cart Cost"
+                ". Cart ."
+                "Footer Footer Footer";
+        }
+
+        .Cart {
+            grid-area: Cart;
+        }
+
+        .Cart img {
+            height: 150px;
+            vertical-align: middle;
+            padding-right: 3em;
+        }
+
+        .Cart ul {
+            list-style: none;
+        }
+
+        .Cart a {
+            text-decoration: none;
+            color: #ce0000;
+        }
+
+        .Cost {
+            grid-area: Cost;
+            border: 1px solid black;
+            margin-right: 6em;
+        }
+
+        .Cost h3 {
+            text-align: center;
+            padding-top: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <!-- Nav bar / header -->
+        <div class="Nav">
+            <ul>
+                <img src="images/logo.png" alt="crowes pizza logo">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="sign-in.html">Sign in</a></li>
+                <li><a class="active" href="#"><img src="images/cart.png" alt="cart icon"></a></li>
+            </ul>
+            <h1>
+                Checkout below
+            </h1>
+        </div>
+        <!-- Content -->
+        <div class="Cart">
+            <ul>
+                <li>
+                    <p><img src="images/pizzas-icon.png" alt=""> $8.99</p>
+                    <a href="#">Remove Item</a>
+                </li>
+                <li>
+                    <p><img src="images/pizzas-icon.png" alt=""> $12.99</p>
+                    <a href="#">Remove Item</a>
+                </li>
+                <li>
+                    <p><img src="images/pizzas-icon.png" alt=""> $16.99</p>
+                    <a href="#">Remove Item</a>
+                </li>
+                <li>
+                    <p><img src="images/calzone-icon.png" alt=""> $6.99</p>
+                    <a href="#">Remove Item</a>
+                </li>
+            </ul>
+        </div>
+        <div class="Cost">
+            <h3>Sub-Total: $45.96</h3>
+            <h3>Tax: $5.97</h3>
+            <h3>Delivery: $3.45</h3>
+            <h3>Total: $55.38 </h3>
+        </div>
+        <!-- Footer -->
+        <div class="Footer">
+            <p>
+                <img src="images/logo.png" alt="">
+                Store #312 <br>
+                Ottawa, Ontario <br>
+                (613)-225-9568 <br>
+                <a href="mailto:crowespizza@crowespizza.com">crowespizza@crowespizza.com</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

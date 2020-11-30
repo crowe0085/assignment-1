@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matthew Crowe">
+    <meta name="email" content="crow0085@algonquinlive.com">
+
+    <title>Crowe's Pizza</title>
+
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+        .grid-container {
+            min-height: 100vh;
+            margin: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr;
+            gap: 0px 0px;
+            grid-template-areas:
+                "Nav Nav Nav Nav Nav"
+                ". image1 image2 image3 ."
+                ". image4 image4 image4 ."
+                ". image5 image5 image6 ."
+                "Footer Footer Footer Footer Footer";
+        }
+
+        div [class ^="image"] img {
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+        }
+
+        .image1 {
+            grid-area: image1;
+        }
+
+        .image2 {
+            grid-area: image2;
+        }
+
+        .image3 {
+            grid-area: image3;
+        }
+
+        .image4 {
+            grid-area: image4;
+        }
+
+        .image5 {
+            grid-area: image5;
+        }
+
+        .image6 {
+            grid-area: image6;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <!-- Nav bar / header -->
+        <div class="Nav">
+            <ul>
+                <img src="images/logo.png" alt="crowes pizza logo">
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="sign-in.html">Sign in</a></li>
+                <li><a href="cart.html"><img src="images/cart.png" alt="cart icon"></a></li>
+            </ul>
+            <h1>
+                Zero Contact Delivery Available Now!
+            </h1>
+        </div>
+        <!-- Content -->
+        <div class="image1">
+            <a href="pizzas.html"> <img src="images/medium-pizza.png" alt="medium pizza 8.99"> </a>
+        </div>
+        <div class="image2">
+            <a href="pizzas.html"><img src="images/large-pizza.png" alt="large pizza 12.99"></a>
+
+        </div>
+        <div class="image3">
+            <a href="pizzas.html"><img src="images/unlimited-medium.png" alt="medium pizza 8.99"></a>
+        </div>
+        <div class="image4">
+            <a href="pizzas.html"><img src="images/calzones.png" alt="calzones"></a>
+        </div>
+        <div class="image5">
+            <a href="pizzas.html"><img src="images/deserts.png" alt="deserts"></a>
+        </div>
+        <div class="image6">
+            <a href="pizzas.html"><img src="images/apps-and-sides.png" alt="sides"></a>
+        </div>
+        <!-- Footer -->
+        <div class="Footer">
+            <p>
+                <img src="images/logo.png" alt="">
+                Store #312 <br>
+                Ottawa, Ontario <br>
+                (613)-225-9568 <br>
+                <a href="mailto:crowespizza@crowespizza.com">crowespizza@crowespizza.com</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
